@@ -1,8 +1,4 @@
-const testObj1 = {
-    a:1,
-    b:2,
-    c:3
-}
+const testObj1 = {a:1,b:2,c:3}
 const testArr1 = [1,2,3]
 
 
@@ -91,8 +87,13 @@ const spreadArrShift=()=>{
     console.log('spreadArrShift',clone)
 }
 
+//destructuring: remove object name from parameter
+const destructureKeys=({a,b,c})=>{
+    console.log('destructureKeys',a,b,c)
+}
 
-const init=()=>{
+
+const allReferences=()=>{
     spreadObjClone() 
     //ln 10
 
@@ -129,7 +130,30 @@ const init=()=>{
 
     spreadArrShift()
     //ln 89
+
+    destructureKeys(testObj1)
+    //ln 95
 }
 
 
-init()
+//runs when imported
+// allReferences()
+
+
+
+//-------EXPORT PRACTICE
+
+//exports this individual function
+export const exportedFn=()=>{
+    console.log('good export')
+}
+
+//object of functions exported by 'export default'
+const objofFntoExport = {
+    fn1:()=>{console.log('function 1')},
+    fn2:()=>{console.log('function 2')},
+    fn3:()=>{console.log('function 3')}
+}
+
+// 'import ES6_notes.js from './ES6_notes.js''  to import
+export default objofFntoExport
