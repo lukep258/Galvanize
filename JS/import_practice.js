@@ -1,4 +1,4 @@
-import ES6_notes from "./ES6_notes.js" //object of functions
+import objofFntoExport from "./ES6_notes.js" //object of functions
 import { exportedFn } from "./ES6_notes.js" //individual function
 
 ES6_notes.fn1()

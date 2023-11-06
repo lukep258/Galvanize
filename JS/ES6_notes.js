@@ -156,4 +156,6 @@ const objofFntoExport = {
 }
 
 // 'import ES6_notes.js from './ES6_notes.js''  to import
+// export default objofFntoExport
+
 export default objofFntoExport
