@@ -13,8 +13,8 @@ app.use(express.json())
 app.use(express.static('public'))
 
 const init=()=>{
-    pool.query(`select * from player`)
-    .then(result=>console.log(result.rows))
+    // pool.query(`select * from player`)
+    // .then(result=>console.log(result.rows))
 
     app.listen(process.env.port,()=>{console.log(`listening on ${process.env.port}`)})
 }
