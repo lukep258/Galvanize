@@ -155,6 +155,17 @@ const objofFntoExport = {
     fn3:()=>{console.log('function 3')}
 }
 
+export class classToExport {
+    constructor(x,y,z){
+        this.x=x
+        this.y=y
+        this.z=z
+    }
+    fn1(){
+        console.log(this.x,this.y,this.z)
+    }
+}
+
 // 'import ES6_notes.js from './ES6_notes.js''  to import
 // export default objofFntoExport
 
